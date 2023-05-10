@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Blinker, sans-serif;
+
+}
+
+
+
+       .navbar img{
+        width: 90px;
+       }
+
+       .navbar-toggler{
+        /* visibility: hidden; */
+        display: none;
+       }
+
+       .navbar button, .section2 button{
+        padding: 5px 20px;
+        min-height: 40px;
+        border: none;
+        background-color: rgb(207, 10, 44);
+        color: #fff;
+        border-radius: 3px;
+        font-weight: bold;
+       }
+
+       .navbar a{
+        color: rgb(207, 10, 44);
+        font-weight: bold;
+        text-decoration: none;
+
+       }
+       main{
+        display: flex;
+        justify-content: space-between;
+
+        }
+
+       .section-apply-1{
+        width: 50%;
+        /* height: 600px; */
+        background-image: url(./beautiful-old-couple.jpg);
+        background-position: center;
+       
+       }
+
+       .section-apply-1 div{
+        color: #fff;
+        background: rgba(20, 53, 90, 0.7);
+        height: 100%;
+       }
+
+       .section-apply-1 aside{
+        padding: 200px 0 0 20px ;
+
+       }
+       .section-apply-1 p{
+        font-size: 18px;
+       }
+
+       .section-apply-2{
+        width: 45%;
+        margin-right: 30px;
+       }
+
+       .form-check{
+        margin: 15px 0;
+       }
+       .this input{
+        background: rgb(76, 76, 76);
+
+       }
+       .second{
+        border: none;
+        background-color: rgb(76, 76, 76);
+       }
+
+       .auto{
+        max-width: 500px;
+        border-top: 4px solid rgb(207, 10, 44);
+        border-right: 4px solid rgb(207, 10, 44);
+        border-radius: 15px 0 15px 0;
+        background-color: rgb(0, 42, 92);
+       }
+
+       .auto a{
+        color: #fff;
+        text-decoration: none;
+       }
+
+       .auto a:hover{
+        color: #fff;
+        text-decoration: underline;
+       }
+
+       .applyBtn{
+        background-color: rgb(207, 10, 44);
+       }
+
+       i{
+        font-weight: bold;
+       }
+
+      /* media query */
+
+      @media (max-width: 950px) {
+        .navbar-toggler{
+            /* visibility: visible; */
+            display: inline-block;
+        }
+
+        main{
+            display: block;
+        }
+        .section-apply-1{
+            width: 100%;
+            text-align: center;
+        }
+        .section-apply-1 aside{
+            text-align: start;
+            margin: 0 10px;
+             padding-bottom: 200px;
+        }
+
+        .section-apply-2{
+            width: 80%;
+            margin: auto;
+        }
+        .goaway{
+            display: none;
+        }
+        .navbar{
+            display: inline-flex;
+        }
+      }

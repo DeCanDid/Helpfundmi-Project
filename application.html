@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helpssa-application</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Blinker">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="./application.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar px-2 bg-white justify-between  z-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./ssa-logo.png" alt=""></a>
+          <div>
+            <a class="goaway" href="./index.html">HOME</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href=""><button onclick="apply()">APPLY NOW</button></a>
+
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          
+          <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="text-primary" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="section-apply-1">
+            <div class="inner-div">
+                <aside>
+                  <h1 style="padding-bottom: 10px; font-weight: bold;">Congratulations!!!</h1>
+                <p>
+                    If you found your name on the winners list and if you can’t find yours,
+                    <br> kindly complete your application form for fast process or contact 
+                    agent – <br> Mike Kwoczala – for manual process to know if you are among
+                     our <br> winners that are yet to claim theirs. 
+                </p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section-apply-2">
+            <h1 style="text-align: center; font-weight: bold; padding-bottom:30px ;">Apply Now</h1>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="inputFullname" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="inputFullname">
+                  </div>
+
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputNumber" class="form-label">Phone</label>
+                  <input type="number" class="form-control" id="inputNumber">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAge" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="inputAge">
+                  </div>
+  
+                  <div class="col-md-6">
+                    <label for="inputOccupation" class="form-label">Occupation</label>
+                    <input type="text" class="form-control" id="inputOccupation">
+                  </div>
+                
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Home Address </label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Gender</label>
+                    <select id="inputState"  class="form-select">
+                      <option id="male" value="Male" selected>Male</option>
+                      <option id="female" value="Female">Female</option>
+                    </select>
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputIncome" class="form-label">Monthly Income (USD)</label>
+                  <input type="number" class="form-control" id="inputIncome">
+                </div>
+
+                <div>
+                    <b>Kindly choose your preferable price from the categories listed in the <br>
+                    alphabet. Note: Be careful while you're choosing and we advise you to <br>
+                    choose wisely. Once you have confirmed the alphabet of your preferable <br>
+                    price, it cannot be reverted.</b>
+
+                </div>
+                
+              
+                <div class="col-12 this">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="A">
+                    <label class="form-check-label" for="gridCheck">
+                        A. $100,000.00 (DISABLED) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="B">
+                    <label class="form-check-label" for="gridCheck">
+                        B. $200,000.00 (UNEMPLOYED) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="BC">
+                    <label class="form-check-label" for="gridCheck">
+                        BC. $300,000.00 (EMPLOYED) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="BD">
+                    <label class="form-check-label" for="gridCheck">
+                        BD. $400,000.00 (EMPLOYED PREMIUM) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="E">
+                    <label class="form-check-label" for="gridCheck">
+                        E. $600,000.00 (RETIRED) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="F">
+                    <label class="form-check-label" for="gridCheck">
+                        F. $700,000.00 (DISABLED PREMIUM) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="FG">
+                    <label class="form-check-label" for="gridCheck">
+                        G. $800,000.00 (PREMIUM OFFER) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="gridCheck" value="H">
+                    <label class="form-check-label" for="gridCheck">
+                        H. $900,000.00 (BUSINESS OFFER) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input  second" type="checkbox" name="gridCheck" value="I">
+                    <label class="form-check-label" for="gridCheck">
+                        I. $100,000.00 (BUSINESS PREMIUM) 10% TAX, CLEARANCE AND DELIVERY CHARGES
+                    </label>
+                  </div>
+                  
+
+
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">How did you hear about us?</label>
+                  <select id="inputState" class="form-select">
+                    <option id="hearAbout" selected></option>
+                    <option id="hearAbout" selected>Facebook.com</option>
+                    <option id="hearAbout" selected>MailBox</option>
+                    <option id="hearAbout" selected>Text Message</option>
+                    <option id="hearAbout" selected>Twitter.com</option>
+                    <option id="hearAbout" selected>E-mail</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Ever Applied For an Grant before?</label>
+                  <select id="inputState" class="form-select">
+                    <option id="applyBefore" selected></option>
+                    <option id="applyBefore" selected>Yes</option>
+                    <option id="applyBefore" selected>No</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button onclick="Asubmit(event)"  id="submit-button" style="background-color: rgb(207, 10, 44);" 
+                  class="btn w-100 text-white fw-bold">Apply Now <i class="icofont-long-arrow-right"></i></button>
+                </div>
+              </form> 
+
+              <section id="success">
+                <!-- <p>THANK YOU FOR SENDING IN YOUR APPLICATION. YOUR <br>
+                   APPLICATION WILL BE ATTENDED TO AS SOON AS <br>
+                   POSSIBLE AND YOU'LL RECEIVE FEEDBACK FROM US.</p> -->
+              </section>
+        </section>
+
+        
+      </main>
+
+      <section class="auto mx-auto text-white text-center py-5 my-5 lastSec">
+        <h2 style="font-weight: bold;">Claiming Agent</h2>
+        <p>Nichole Monroe</p>
+        <a href="Bbriangrant101@gmail.com"><p>nicholemonroe18@gmail.com</p></a>
+        <p>Call or Text: +1 (714) 989-6306</p>
+    </section>
+
+    <footer style="background-color: rgb(0, 42, 92); min-height: 80px; color: #fff;">
+      <p style="padding: 25px 0 0 25px;">Copyright © 2023 - SSA. All Rights Reserved</p>
+    </footer>
+    
+</body>
+<script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+<script src="database.js" type="module"></script>
+
+</html>
+
+<script>
+
+   function Asubmit(event) {
+        event.preventDefault()
+        // console.log('active');
+         
+    }
+
+    function apply() {
+    window.location.href = "appliction.html"
+  }
+
+
+  // let fullName = document.getElementById('inputFullname');
+  // let email = document.getElementById("inputEmail");
+  // let mobileNumber = document.getElementById("inputNumber");
+  // let age = document.getElementById("inputAge");
+  // let occupation = document.getElementById("inputOccupation");
+  // let address = document.getElementById("inputAddress");
+  // let male = document.getElementById("male");
+  // let female = document.getElementById("female");
+  // let income = document.getElementById("inputIncome");
+  // let gridCheck = document.getElementById("gridCheck");
+  // let hearAbout = document.getElementById("hearAbout");
+  // let applyBefore = document.getElementById("applyBefore");
+  // let grant = document.getElementById('success')
+
+  // function Submit() {
+  //   if (fullName.value == '' || email.value == '' || mobileNumber.value == ''
+  //    || age.value == '' || occupation.value == '' || address.value == '' || 
+  //    male.value == '' || female.value == '' || income.value == '' || gridCheck.value == '') {
+  //     alert("Please, fill all the informations below")
+      
+  //   } else {
+  //     grant.innerHTML = `
+  //               <div class="successful text-center text-white py-3 
+  //             px-3 my-3"style="background-color: rgb(21, 208, 83);">
+  //                 <p>THANK YOU FOR SENDING IN YOUR APPLICATION. YOUR <br>
+  //                  APPLICATION WILL BE ATTENDED TO AS SOON AS <br>
+  //                  POSSIBLE AND YOU'LL RECEIVE FEEDBACK FROM US.</p>
+  //               </div>
+  //     `
+  //   }
+    
+  // }
+
+  
+</script>

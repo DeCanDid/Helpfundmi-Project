@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Blinker, sans-serif;
+
+}
+
+.navbar{
+    padding: 0 50px;
+    z-index: 3;
+}
+
+       .navbar img{
+        width: 90px;
+       }
+
+       .navbar-toggler{
+        /* visibility: hidden; */
+        display: none;
+       }
+
+       .navbar button, .section2 button{
+        padding: 5px 20px;
+        min-height: 40px;
+        border: none;
+        background-color: rgb(207, 10, 44);
+        color: #fff;
+        border-radius: 3px;
+        font-weight: bold;
+       }
+
+       .navbar a{
+        color: rgb(207, 10, 44);
+        font-weight: bold;
+        text-decoration: none;
+       }
+
+       .section1{
+        color: #fff;
+        text-align: center;
+        background-image: url('./usaImage.jpg');
+        /* background-repeat: no-repeat; */
+        height: 450px;
+        background-size: contain;
+        margin: 0 0 100px 0;
+        
+       }
+
+       .section1 h1{
+        font-size: 50px;
+        font-weight: 900;
+        font-family: Blinker, sans-serif;
+        padding-top: 100px;
+       }
+
+       .section2 img{
+        width: 800px;
+       }
+
+       .section2{
+        margin: auto;
+        width: 90%;
+        color: #fff;
+        font-family: Blinker, sans-serif;
+        margin: 100px 100px 100px 50px;
+       }
+
+       .mini{
+        display: flex;
+        margin-left: 100px;
+        align-items: center;
+       }
+
+       .mini img{
+        width:60% ;
+       }
+
+       .section2{
+        margin:30px auto;
+        width: 80%;
+       }
+
+       .section2 aside{
+        margin-left: -60px;
+        background: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+        padding: 50px 50px 50px 30px;
+        height: fit-content;
+        max-width: 400px;
+        border-top: 5px solid rgb(207, 10, 44);
+        border-right: 5px solid rgb(207, 10, 44);
+
+       }
+
+       .section2 button, .section3 button,
+       .section7 button{
+        padding: 7px 20px;
+        background-color: rgb(207, 10, 44);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 20px;
+        min-height: 40px;
+        font-weight: bold;
+       }
+
+       .section3{
+        font-family: Blinker, sans-serif;
+        color: #fff;
+        height: 600px;
+        background-image: url(./older-stylish-man-with-sunglasses-posing-by-beach.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* justify-content: end; */
+        /* position: relative; */
+       }
+
+       .grad{
+        background-color: rgba(20, 53, 90, 0.8);
+        padding:150px 10px 10px 400px;
+        height: 100%;
+       }
+
+       .grad p{
+        font-size: large;
+       }
+
+       .skyblue{
+        background-color: rgb(184,227,230);
+        text-align: center;
+        padding: 60px 0;
+       }
+
+       .skyblue p{
+        font-size: 20px;
+       }
+
+       .section4{
+        display: flex;
+       }
+
+       .section4 h4{
+        font-weight: bold;
+       }
+
+       .section5{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 80%; */
+        margin: auto;
+        /* padding: ; */
+       }
+
+       .section5 footer{
+        /* position: relative; */
+        max-width: 350px;
+        margin: 25px;
+       }
+
+       .section5 div{
+        padding: 10px;
+        min-width: 350px;
+        min-height: 420px;
+        /* margin: 20px; */
+
+       }
+
+       .section5 h5{
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px;
+       }
+
+       .section5{
+        width: 90%;
+        margin: auto;
+        /* border: 2px solid blueviolet; */
+        color: #fff;
+       }
+
+       .section6{
+        width: 95%;
+        margin: auto;
+       }
+
+       table{
+        width: 90%;
+        margin:auto ;
+       }
+
+       table, tr,td,th{
+        border: 1px solid lightgrey;
+        /* min-width: 50px; */
+        padding: 10px;
+       }
+       tr, td, th{
+        min-width: 50px;
+       }
+       th{
+        background-color: rgb(207, 10, 44);
+        color: #fff;
+        font-weight: bold;
+       }
+
+       .section7{
+        min-height: 500px;
+        margin-top: 50px ;
+       }
+
+       .section7 div{
+        /* position: absolute; */
+        min-height: 500px;
+        background: transparent;
+        word-spacing: 0.5px;
+        padding: 150px 0 20px 50px;
+        background: rgba(20, 53, 90, 0.8);
+        /* background: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); */
+       }
+
+
+
+       /* Media Query */
+
+       @media (max-width: 950px) {
+        .navbar-toggler{
+              display: inline-block;
+        }
+
+        .goaway{
+            display: none;
+        }
+
+        .section1 h1{
+            font-size: 25px;
+            padding:200px 30px 0 30px;
+        }
+        .mini{
+            display: block;
+            margin: 20px 0;
+        }
+
+        .mini img{
+            width:100%;
+        }
+        .mini aside{
+            margin: auto;
+        }
+
+
+        .grad{
+            display: none;
+        }
+        .section3{
+            width: 100%;
+            justify-content: center;
+        }
+
+        .section4{
+           display: block;
+        }
+
+           tr, td, th{
+        min-width: 25px;
+       }
+
+      
+    }
+
+    @media (max-width:500px) {
+        .section1{
+            background-size:cover;
+        }
+        tr, td, th{
+            min-width: 40px;
+           }
+    }
+
+
+
+
+    
+
+
+ 
+
+   
